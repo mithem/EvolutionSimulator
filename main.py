@@ -87,7 +87,7 @@ except KeyboardInterrupt:
     pass
 finally:
     f = open("creature_data.csv", "w")
-    f.write("t, n\n")
+    f.write("t, cats, mice, food\n")
     f.writelines(csv_lines)
     f.close()
 
