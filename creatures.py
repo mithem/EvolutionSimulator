@@ -26,6 +26,12 @@ class Creature:
 
 
 class Cat(Creature):
-    def __init__(self, name=random.getrandbits(10), replication_chance=0.1, death_chance=0.09, speed=1):
+    def __init__(self, name=str(random.getrandbits(10)), replication_chance=0.1, death_chance=0.09, speed=1):
         Creature.__init__(self, name=name, replication_chance=replication_chance,
                           death_chance=death_chance, species="cat", speed=speed)
+
+
+class Mouse(Creature):
+    def __init__(self, name=str(random.getrandbits(10)), replication_chance=0.1, death_chance=0.09, speed=1):
+        Creature.__init__(self, name=name, replication_chance=replication_chance,
+                          death_chance=death_chance, species="mouse", speed=speed)
